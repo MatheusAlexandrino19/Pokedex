@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="icon" href="/favicon/favicon-16x16.png" type="image/x-icon">
+    <script src="/js/script.js" defer></script>
+    <title>Pokedex</title>
+</head>
+<body>
+        <main> <!--Pokedex-->
+            
+            <img id="pokemon-img" class="Pokemon" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/6.png" alt="Pokemon">
+
+            <h1 class="Pokemon-Data"> <!--Pokemon Data-->
+            <span class="Pokemon-Id" id="Pokemon-Id">6</span> -
+            <span class="Pokemon-Name" id="Pokemon-Name">Charizard</span>
+            </h1>
+
+            
+            <div class="types Type-2"> <span id="Type2">Fire</span>      </div>
+            <div class=" types Type-1"> <span id="Type1">Flying</span>      </div>
+            
+            <form class="Pokemon-Form" id="PokemonForm">
+            <input class="Pokemon-search" type="search" placeholder="Name Or Number" required id="Pokemon_input_search">
+            </form>
+
+            <div class="buttons">
+                <button class="button btn-prev" id="next-btn">Prev &lt;</button>
+                <button class="button btn-next" id="prev-btn">Next &gt;</button>
+              </div>
+          
+            <img  class="Pokedex" src="/img/pokedex.png" alt="pokedex">
+        </main>
+</body>
+</html>

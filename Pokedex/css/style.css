@@ -1,0 +1,125 @@
+/*Variaveis e Fontes*/
+@import url('https://fonts.googleapis.com/css2?family=Oxanium:wght@300;400;500;600;700;800&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: 'Oxanium', sans-serif;
+}
+
+body{
+    text-align: center;
+    background:linear-gradient(to bottom, #39a6ff, #c2e3ff);
+    min-height: 100vh;
+}
+/*Estilização Pokedex*/
+main{
+    display: inline-block;
+    margin-top: 2%;
+    position: relative  ;
+}
+.Pokedex{
+    width: 100%;
+    max-width: 450px;
+}
+
+/*Estilização Pokemon*/
+.Pokemon{
+    position: absolute;
+    bottom: 50%;
+    left: 50%;
+    transform: translate(-63%,0);
+    height: 19%;
+}
+.Pokemon-Data{
+    position: absolute;
+    font-weight: 600;
+    top: 54.5%;
+    right: 27%;
+    color: #aaa;
+    font-size: clamp(8px,5vw,25px);
+}
+.Pokemon-Name{
+    color: #3a444d;
+    text-transform: capitalize;
+}
+/*Estilização Pesquisa por Pokemon*/
+.Pokemon-search{
+    width: 100%;
+    padding: 4%;
+    outline: none;
+    border: 2px solid #333;
+    border-radius: 5px;
+    font-weight: 600;
+    color: #3a444d;
+    font-size: clamp(8px, 5vw, 1rem);
+    box-shadow: -3px 4px 0 #888, -5px 7px 0 #333
+}
+.Pokemon-Form{
+    margin-top: 1%;
+    margin-right: 3%;
+    height: 30px;
+    position: absolute;
+    width: 70%;
+    top: 72%;
+    left: 13.5%;
+}
+/*Estilização Tipos do pokemon*/
+.types{
+    position: absolute;
+    width: 27%;
+    top: 65%;
+    height: 6%;
+    border-radius: 10px;
+    box-shadow: -2px 3px 0 #222, -4px 3.5px 0 #000;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+.Type-1{
+    width: 24%;    border: #333 solid 4px;
+    background-color: white;
+    left: 58%;
+    padding: 5px;
+    color: red;
+
+    font-size: clamp(3px, 2vw, 17px);
+}
+.Type-2{
+
+    background-color: white;
+    border: #333 solid 4px;
+    left: 20%;
+    padding: 5px;
+    color: rgb(88, 226, 244);
+
+    font-size: clamp(3px, 2vw, 17px);
+}
+
+/*Estilização Botões*/
+.buttons {
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    width: 65%;
+    transform: translate(-57%, 0);
+    display: flex;
+    gap: 20px;
+  }
+
+.button {
+    width: 50%;
+    padding: 4%;
+    border: 2px solid #000;
+    border-radius: 5px;
+    font-size: clamp(8px, 5vw, 1rem);
+    font-weight: 600;
+    color: white;
+    background-color: #444;
+    box-shadow: -2px 3px 0 #222, -4px 6px 0 #000;
+  }
+  
+.button:active {
+    box-shadow: inset -4px 4px 0 #222;
+    font-size: 0.9rem;
+  }
